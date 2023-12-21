@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import Chat from "@polyfire-ai/chat-ui";
+
 import reportWebVitals from "./reportWebVitals";
 import { PolyfireProvider } from "polyfire-js/hooks";
 
@@ -14,7 +16,9 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <PolyfireProvider project={process.env.REACT_APP_POLYFIRE_PROJECT as string}>
-    <App />
+    <Chat.Root baseChatColor="#4682B4">
+      <App />
+    </Chat.Root>
   </PolyfireProvider>
 );
 
