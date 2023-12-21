@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <PolyfireProvider project={process.env.REACT_APP_PROJECT_ALIAS as string}>
+  <PolyfireProvider project={process.env.REACT_APP_POLYFIRE_PROJECT as string}>
     <App />
   </PolyfireProvider>
 );
